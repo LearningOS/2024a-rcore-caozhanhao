@@ -1,0 +1,11 @@
+diff a/os/src/task/mod.rs b/os/src/task/mod.rs	(rejected hunks)
+@@ -26,8 +26,7 @@ use alloc::sync::Arc;
+ use lazy_static::*;
+ pub use manager::{fetch_task, TaskManager};
+ use switch::__switch;
+-pub use task::{TaskControlBlock, TaskStatus};
+-
++pub use task::{TaskControlBlock, TaskStatus, TaskInfo};
+ pub use context::TaskContext;
+ pub use id::{kstack_alloc, pid_alloc, KernelStack, PidHandle};
+ pub use manager::add_task;
